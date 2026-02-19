@@ -4,8 +4,21 @@
 
 <main>
   <article *ngFor="let post of posts; let i = index" class="card">
-    <h2>{{ post.title }}</h2>
-    <p>{{ post.description }}</p>
+    <h2>My Blog</h2>
+     <p>Hello, My name is Wendy Michelle Sy</p>
     <button (click)="deletePost(i)">Delete</button>
+  </article>
+</main>
+
+ <article class="posts-card">
+    <h2>Post</h2>
+    <p>Secret para bibo</p>
+    <button>Delete</button>
+  </article>
+  
+   <article class="posts-card">
+    <h2>My Thoughts</h2>
+    <p>Nabuang nako, actually HAHAHAH.</p>
+    <button>Delete</button>
   </article>
 </main>
