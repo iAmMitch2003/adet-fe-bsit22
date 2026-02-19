@@ -1,0 +1,11 @@
+<header>
+  <h1>Community Feed</h1>
+</header>
+
+<main>
+  <article *ngFor="let post of posts; let i = index" class="card">
+    <h2>{{ post.title }}</h2>
+    <p>{{ post.description }}</p>
+    <button (click)="deletePost(i)">Delete</button>
+  </article>
+</main>
